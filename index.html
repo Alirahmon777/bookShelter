@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.min.css" />
+  <title>Bookshelter | Home</title>
+</head>
+
+<body class="body">
+
+  <!-- MODAL -->
+
+  <div class="modal">
+    <div class="modal__wrapper">
+      <div class="modal__head">
+        <h1 class="modal__title">Python</h1>
+        <button class="modal__xclose">
+          <img src="./assets/svg/x-close.svg" alt="close btn icon">
+        </button>
+      </div>
+      <div class="modal__body">
+        <div class="modal__imgbox">
+          <img class="modal__img" src="./assets/img/python.png" alt="pyhton">
+        </div>
+        <p class="modal__desc">Culpa nulla pariatur cupidatat nisi incididunt ea do ipsum. Incididunt quis mollit elit
+          commodo cillum eiusmod
+          reprehenderit labore irure. Cillum et incididunt et nostrud exercitation quis aute laboris non ut
+          adipisicing. Laboris
+          ad minim aute nulla proident deserunt velit anim sunt aliquip ut sit. Exercitation aliquip ullamco officia
+          non aliqua.
+          Sint deserunt aliquip veniam id eiusmod sit consectetur mollit ea aliqua officia consequat. Magna non mollit
+          nisi est
+          commodo voluptate aute id. Deserunt nostrud id do in nisi mollit deserunt non. Pariatur fugiat cillum irure
+          elit sint
+          nisi ad ipsum culpa deserunt cupidatat esse consequat laboris. Id aliquip non consectetur esse proident duis
+          Lorem.</p>
+
+        <ul class="modal__list">
+          <li class="modal__item">
+            <p class="modal__authortext modal__itemtext">Author: </p>
+            <div class="modal__authors modal__itembox">Jamal Kasper</div>
+            <div class="modal__authors modal__itembox">Author 2</div>
+          </li>
+          <li class="modal__item">
+            <p class="modal__datetext modal__itemtext">Published: </p>
+            <div class="modal__date modal__itembox">2019</div>
+          </li>
+          <li class="modal__item">
+            <p class="modal__publishertext modal__itemtext">Publishers: </p>
+            <div class="modal__publishers modal__itembox">Hollman</div>
+          </li>
+          <li class="modal__item">
+            <p class="modal__categoriestext modal__itemtext">Categories: </p>
+            <div class="modal__categories modal__itembox">Computers</div>
+          </li>
+          <li class="modal__item">
+            <p class="modal__pagestext modal__itemtext">Pages Count: </p>
+            <div class="modal__pages modal__itembox">346</div>
+          </li>
+        </ul>
+      </div>
+      <div class="modal__footer">
+        <button class="modal__readbtn">
+          read
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL -->
+
+
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <a href="./index.html">
+          <img src="./assets/svg/book-logo.svg" alt="logo" /></a>
+        <form>
+          <div class="header__formbox">
+            <button class="header__searchbtn">
+              <img src="./assets/svg/search.svg" alt="search-icon" />
+            </button>
+            <input type="search" name="search" id="header-search" class="header__search" placeholder="Search books" />
+          </div>
+        </form>
+        <div class="header__themebtns">
+          <button class="header__themebtn">
+            <img src="./assets/svg/sun.svg" alt="theme sun-icon" />
+          </button>
+          <a href="./pages/admin.html">admin</a>
+          <button class="header__logout">Logout</button>
+        </div>
+      </div>
+    </div>
+    <div class="header-filter">
+      <div class="container">
+        <div class="header-filter__wrapper">
+          <div class="header-filter__result">
+            <p class="header-filter__resulttext">
+              Showing <span>..</span> result(s)
+            </p>
+          </div>
+          <button class="header-filter__btn">
+            <img src="./assets/svg/calendar.svg" alt="sort by newest or oldest" />
+            Order by newest
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <div class="lds-roller">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <section class="bookmark">
+
+      <div class="container">
+        <div class="bookmark__wrapper">
+
+
+          <div class="bookmark__list">
+
+            <div class="bookmark__titlebox">
+              <h2 class="bookmark__title">Bookmarks</h2>
+              <p class="bookmark__desc">
+                If you don’t like to read, you haven’t found the right
+                book
+              </p>
+            </div>
+
+
+            <div class="bookmark__item">
+              <div class="bookmark__content">
+                <h3 class="bookmark__listtitle">Python</h3>
+                <p class="bookmark__author">David M. Beazley</p>
+              </div>
+              <div class="bookmark__btns">
+                <button class="bookmark__openbtn">
+                  <img src="./assets/svg/book-open-btn.svg" alt="bookmark open icon" />
+                </button>
+                <button class="bookmark__deletebtn">
+                  <img src="./assets/svg/delete-btn.svg" alt="bookmark delete icon" />
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="cards">
+      <div class="container">
+
+        <div class="cards__wrapper">
+
+          <ul class="cards__list">
+
+          </ul>
+          <div class="cards__pagination">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <template class="books__template">
+    <li class="cards__item">
+      <div class="cards__imgbox">
+        <img class="cards__img" src="./assets/img/python.png" alt="" />
+      </div>
+      <div class="cards__content">
+        <div class="cards__description">
+          <h3 class="cards__title">Python</h3>
+          <p class="cards__author">David M. Beazley</p>
+          <p class="cards__date">2009</p>
+        </div>
+        <div class="cards__btns">
+          <button class="cards__bookmarkbtn">Bookmark</button>
+          <button class="cards__infobtn">More Info</button>
+          <button class="cards__readbtn">Read</button>
+        </div>
+      </div>
+    </li>
+  </template>
+
+  <script type="module" src="./js/script.js"></script>
+</body>
+
+</html>

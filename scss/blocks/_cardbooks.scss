@@ -1,0 +1,212 @@
+.cards {
+  padding: 40px 0;
+  position: relative;
+  width: 100%;
+  background: $bluegrey;
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__list {
+    background: $bluegrey;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 23px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    padding: 13px 15px;
+    background: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+
+  &__imgbox {
+    padding: 18px 24px;
+    background: $bluegrey;
+    border-radius: 5px;
+  }
+
+  &__imgbox img {
+    width: 201px;
+    height: 202px;
+    border-radius: 5px;
+  }
+
+  &__content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__description {
+    flex-grow: 1;
+    margin-top: 19px;
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: $black;
+  }
+
+  &__author,
+  &__date {
+    font-family: "Noto Sans";
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    color: $grey;
+  }
+
+  &__btns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+  }
+
+  &__bookmarkbtn,
+  &__infobtn,
+  &__readbtn {
+    @include button(Rubik, 10px, 25px, $yellow, $black, none, none, 500);
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  &__readbtn {
+    background-color: $btngrey;
+    color: $white;
+    grid-column: span 2;
+  }
+
+  &__infobtn {
+    background-color: $btnblue;
+    color: $blue;
+  }
+
+  &__pagination {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 33px;
+    text-align: center;
+  }
+
+  &__pagination button {
+    padding: 7px 12.4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #212b36;
+    border: 1px solid #dfe3e8;
+    border-radius: 4px;
+    background-color: $white;
+    cursor: pointer;
+  }
+
+  &__pagination button img {
+    pointer-events: none;
+  }
+}
+
+.lds-roller {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  right: 0;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  z-index: 1000;
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ff0000;
+  margin: -25px 0 0 -25px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 83px;
+  left: 83px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 88px;
+  left: 76px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 91px;
+  left: 68px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 92px;
+  left: 60px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 91px;
+  left: 52px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 88px;
+  left: 44px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 83px;
+  left: 37px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 76px;
+  left: 32px;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

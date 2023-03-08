@@ -1,0 +1,64 @@
+.admin {
+  width: 100%;
+
+  &__wrapper {
+    padding: 5px 0;
+    border-radius: 8px;
+    background: #fff;
+  }
+
+  &__wrapper form {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 7px;
+    background-color: #f7f6f8;
+    border: none;
+    outline: none;
+  }
+
+  &__input::-webkit-inner-spin-button,
+  &__input::-webkit-outer-spin-button {
+    display: none;
+  }
+
+  &__form {
+    height: 100%;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__btn--submit {
+    @include button(Rubik, 15px, 20px, $blue, $white, none, none, 500);
+    width: 100%;
+  }
+
+  &__addpanel {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  &__head {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  &__head span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

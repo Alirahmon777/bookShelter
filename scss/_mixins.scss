@@ -1,0 +1,29 @@
+@mixin button(
+  $font-family,
+  $paddingY,
+  $paddingX,
+  $backgroundColor,
+  $color,
+  $hovercolor,
+  $hoverbackground,
+  $fontweight
+) {
+  padding: $paddingY $paddingX;
+  font-family: $font-family;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  cursor: pointer;
+  background-color: $backgroundColor;
+  color: $color;
+  transition: all 0.3s linear;
+  border-radius: 4px;
+  font-weight: $fontweight;
+  border: none;
+  outline: none;
+
+  &:hover {
+    background-color: $hoverbackground;
+    color: $hovercolor;
+  }
+} ;

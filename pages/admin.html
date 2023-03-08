@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.min.css" />
+    <title>Bookshelter | Home</title>
+</head>
+
+<body class="body">
+
+    <!-- MODAL -->
+
+    <div class="modal">
+        <div class="modal__wrapper">
+            <div class="modal__head">
+                <h1 class="modal__title">Python</h1>
+                <button class="modal__xclose">
+                    <img src="../assets/svg/x-close.svg" alt="close btn icon">
+                </button>
+            </div>
+            <div class="modal__body">
+                <div class="modal__imgbox">
+                    <img class="modal__img" src="../assets/img/python.png" alt="pyhton">
+                </div>
+                <p class="modal__desc"></p>
+
+                <ul class="modal__list">
+                    <li class="modal__item">
+                        <p class="modal__authortext modal__itemtext">Author: </p>
+                        <div class="modal__authors modal__itembox">Jamal Kasper</div>
+                        <div class="modal__authors modal__itembox">Author 2</div>
+                    </li>
+                    <li class="modal__item">
+                        <p class="modal__datetext modal__itemtext">Published: </p>
+                        <div class="modal__date modal__itembox">2019</div>
+                    </li>
+                    <li class="modal__item">
+                        <p class="modal__publishertext modal__itemtext">Publishers: </p>
+                        <div class="modal__publishers modal__itembox">Hollman</div>
+                    </li>
+                    <li class="modal__item">
+                        <p class="modal__categoriestext modal__itemtext">Categories: </p>
+                        <div class="modal__categories modal__itembox">Computers</div>
+                    </li>
+                    <li class="modal__item">
+                        <p class="modal__pagestext modal__itemtext">Pages Count: </p>
+                        <div class="modal__pages modal__itembox">346</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="modal__footer">
+                <button class="modal__readbtn">
+                    read
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL -->
+
+
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <a href="../index.html">
+                    <img src="../assets/svg/book-logo.svg" alt="logo" /></a>
+                <form>
+                    <div class="header__formbox">
+                        <button class="header__searchbtn">
+                            <img src="../assets/svg/search.svg" alt="search-icon" />
+                        </button>
+                        <input type="search" name="search" id="header-search" class="header__search"
+                            placeholder="Search books" />
+                    </div>
+                </form>
+                <div class="header__themebtns">
+                    <button class="header__themebtn">
+                        <img src="../assets/svg/sun.svg" alt="theme sun-icon" />
+                    </button>
+                    <a href="../index.html">Home</a>
+                    <button class="header__logout">Logout</button>
+                </div>
+            </div>
+        </div>
+        <div class="header-filter">
+            <div class="container">
+                <div class="header-filter__wrapper">
+                    <div class="header-filter__result">
+                        <p class="header-filter__resulttext">
+                            Showing <span>..</span> result(s)
+                        </p>
+                    </div>
+                    <button class="header-filter__btn">
+                        <img src="../assets/svg/calendar.svg" alt="sort by newest or oldest" />
+                        Order by newest
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <section class="admin">
+            <div class="container">
+                <div class="admin__wrapper">
+                    <div class="admin__addpanel">
+                        <div class="admin__head">
+                            <span>
+                                <h2 class="admin__title">Kitob qo'shish</h2>
+                            </span>
+
+                            <form action="" class="admin__form" id="admin-form">
+                                <input class="admin__input" id="admin-addimage" type="text"
+                                    placeholder="Kitobni rasmini kiriting" />
+                                <input class="admin__input" id="admin-addtitle" type="text"
+                                    placeholder="Kitobni nomini kiriting" />
+                                <input class="admin__input" id="admin-adddesc" type="text"
+                                    placeholder="Kitobni tavsifini kiriting" />
+                                <input class="admin__input" id="admin-addauthor" type="text"
+                                    placeholder="Kitobni yozuvchisini kiriting" />
+                                <input class="admin__input" id="admin-addpublisher" type="text"
+                                    placeholder="Kitobni nashriyotini kiriting" />
+                                <input class="admin__input" id="admin-addcateg" type="text"
+                                    placeholder="Kitobni categoriyasini kiriting" />
+                                <input class="admin__input" id="admin-addpage" type="number"
+                                    placeholder="Kitobni sahifasini kiriting" />
+                                <input class="admin__input" id="admin-adddate" type="date"
+                                    placeholder="Kitobni sanasi kiriting" />
+
+                                <button class="admin__btn--submit" id="admin-add">
+                                    Submit
+                                </button>
+                            </form>
+                        </div>
+                        <!-- <li class="top-products__item admin__preview">
+                    <div class="top-products__imagebox">
+                        <img class="top-products__img admin__previewimg"
+                            src="../assets/images/cfga8ht40v9uauhi13f0.jpg" alt="pepsi cola" />
+                    </div>
+                    <div class="top-products__box">
+                        <p class="top-products__name admin__previewtitle">
+                            Gazlangan ichimlik Pepsi, 1 l + Mountain Dew, 1l, 1+1
+                        </p>
+                        <p class="top-products__rating admin__previewrating">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 18 18"
+                                fill="none">
+                                <path
+                                    d="M9 12.9525L13.635 15.75L12.405 10.4775L16.5 6.93L11.1075 6.4725L9 1.5L6.8925 6.4725L1.5 6.93L5.595 10.4775L4.365 15.75L9 12.9525Z"
+                                    fill="#F5A623" />
+                            </svg>
+                            <span>5.0 (67 baho)</span>
+                        </p>
+                        <p class="top-products__monthly admin__previewmonthly">
+                            <mark><span>1 080</span> so'm/oyiga</mark>
+                        </p>
+                        <div class="top-products__bottom">
+                            <div class="top-products__prices">
+                                <p class="top-products__subprice admin__previewsubprice">
+                                    22 000 so'm
+                                </p>
+                                <p class="top-products__price admin__previewprice">
+                                    <span>9 000</span> so'm
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="lds-roller">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <section class="bookmark">
+
+            <div class="container">
+                <div class="bookmark__wrapper">
+
+
+                    <div class="bookmark__list">
+
+                        <div class="bookmark__titlebox">
+                            <h2 class="bookmark__title">Bookmarks</h2>
+                            <p class="bookmark__desc">
+                                If you don’t like to read, you haven’t found the right
+                                book
+                            </p>
+                        </div>
+
+
+                        <div class="bookmark__item">
+                            <div class="bookmark__content">
+                                <h3 class="bookmark__listtitle">Python</h3>
+                                <p class="bookmark__author">David M. Beazley</p>
+                            </div>
+                            <div class="bookmark__btns">
+                                <button class="bookmark__openbtn">
+                                    <img src="../assets/svg/book-open-btn.svg" alt="bookmark open icon" />
+                                </button>
+                                <button class="bookmark__deletebtn">
+                                    <img src="../assets/svg/delete-btn.svg" alt="bookmark delete icon" />
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="cards">
+            <div class="container">
+
+                <div class="cards__wrapper">
+
+                    <ul class="cards__list">
+
+                    </ul>
+                    <div class="cards__pagination">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <template class="books__template">
+        <li class="cards__item">
+            <div class="cards__imgbox">
+                <img class="cards__img" src="../assets/img/python.png" alt="" />
+            </div>
+            <div class="cards__content">
+                <div class="cards__description">
+                    <h3 class="cards__title">Python</h3>
+                    <p class="cards__author">David M. Beazley</p>
+                    <p class="cards__date">2009</p>
+                </div>
+                <div class="cards__btns">
+                    <button class="cards__bookmarkbtn">Bookmark</button>
+                    <button class="cards__infobtn">More Info</button>
+                    <button class="cards__readbtn">Read</button>
+                </div>
+            </div>
+        </li>
+    </template>
+
+    <script type="module" src="../js/admin.js"></script>
+</body>
+
+</html>

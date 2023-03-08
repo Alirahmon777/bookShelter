@@ -1,0 +1,123 @@
+.modal {
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+  background: #00000050;
+  opacity: 0;
+  transition: all 0.2s ease;
+  pointer-events: none;
+
+  &__wrapper {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    transform: translateX(400px);
+    transition: all 0.2s ease;
+  }
+
+  &__head {
+    padding: 22.78px 34px;
+    background: $bluegrey;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #222531;
+  }
+
+  &__xclose {
+    border: none;
+    border-radius: 24px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  &__body {
+    flex-grow: 1;
+    background-color: $white;
+    padding: 34.3px 34px 0;
+    margin: 0 auto;
+  }
+
+  &__imgbox {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  &__img {
+    width: 150px;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+
+  &__desc {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150.3%;
+    color: #58667e;
+  }
+
+  &__list {
+    margin-top: 15px;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+  }
+
+  &__item {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+
+  &__itembox {
+    padding: 5px 14px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #0d75ff;
+    background: rgba(13, 117, 255, 0.09);
+    border-radius: 30px;
+  }
+
+  &__itemtext {
+    margin-right: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #222531;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 15px 20px;
+    background: $bluegrey;
+  }
+
+  &__readbtn {
+    padding: 9px 38px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: capitalize;
+    color: $white;
+    background: $btngrey;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+}
